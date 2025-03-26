@@ -1,1 +1,1 @@
-details = {"Name":"Mr MRK Usafzai"}
+details = {"Name":"Mr MRK Usafzai", "CNIC" : "1730197465175"}
