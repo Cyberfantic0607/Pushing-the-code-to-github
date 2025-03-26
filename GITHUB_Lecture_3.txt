@@ -1,0 +1,210 @@
+Previous Knowledge 
+Cloning the Project from the GitHub on our local system
+Commands in the VS Code
+Clone and Status
+Changing Directories
+Untracked files
+modified files
+_____________________________________________________________
+Now how the Git track the changes in the files or folder
+ADD and COMMIT is the solution.
+
+ADD: Adds new or changed files in your working directory to 
+the Git staging area.
+git add <-file Name->
+
+ADD is like the staging area which is unmodified and untracked
+Staging exist between the Untracked and Unmodified.
+
+Now after this command lets check the status...
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   File_creation_demo.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Orange Modern Attractive YouTube Thumbnail.png
+_______________________________________________________________
+It will show that the changes to be committed:
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   File_creation_demo.html
+Also check the file name it will also changes to the 
+A from U----Untracked to the Index Added.
+_______________________________________________________________
+Now we can also add the other file like Readme.md etc
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   File_creation_demo.html
+        modified:   README.md
+_______________________________________________________________
+now if we have alot of files then what should we have to do
+simple use the command:
+git add . (dot)
+
+PS F:\MUzaffarabad Batch 5th\GIT Class\Demo_for_Creating_Account> git add .
+PS F:\MUzaffarabad Batch 5th\GIT Class\Demo_for_Creating_Account> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   File_creation_demo.html
+        new file:   Orange Modern Attractive YouTube Thumbnail.png
+        modified:   README.md
+        new file:   index.html
+_______________________________________________________________
+Now we have to commit something:
+Commit means: It is the record of change.(Legal Record->Finally done)
+git commit -m "some message"
+
+Make the message meaningfully 
+Like we add new features: so we have to write like
+Add New Buttons, Add new features, Fix old bugs, fix new bugs etc
+
+example: git commit -m "Added new paragraph"
+
+PS F:\MUzaffarabad Batch 5th\GIT Class\Demo_for_Creating_Account> git commit -m "Added New Files"
+[main c378fb1] Added New Files
+ 4 files changed, 4 insertions(+), 1 deletion(-)
+ create mode 100644 File_creation_demo.html
+ create mode 100644 Orange Modern Attractive YouTube Thumbnail.png
+ create mode 100644 index.html
+____________________________________________________________
+It will show the message that 
+PS F:\MUzaffarabad Batch 5th\GIT Class\Demo_for_Creating_Account> git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+______________________________________________________________
+Means we are one (1) commit after on our local system as compared 
+to the GitHub remote...
+______________________________________________________________
+Now in order to show the changes on the GitHub 
+we will use other command that is push command:
+
+PUSH: Upload local repo content to remote repo content.
+git push origin main
+
+
+Some problems may arise Contact Me To resolve the problem
+
+
+PS F:\MUzaffarabad Batch 5th\GIT Class\Demo_for_Creating_Account> git push origin main
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 1.83 MiB | 396.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Cyberfantic0607/Demo_for_Creating_Account.git
+   24478c6..c378fb1  main -> main
+_____________________________________________________________________
+Now you can check the commits.
+Just click on the commit with clock you will see the commits time to time done by the user.
+_____________________________________________________________________
+But sometimes we make our own projects and push them on our local machine then how we manage the project with our GitHub...
+so the solution is 
+INIT Command: Used to create a new git repo.
+git init
+git remote add origin <-link->
+git remote -v (to verify remote)
+git branch  (to check branch)
+git branch -M main  (to rename branch)
+git push origin  main
+
+
+
+Now we are going to create the new folder in our already 
+existing folder.
+mkdir LocalRepo-----mkdir ----> Making Directory
+
+PS F:\MUzaffarabad Batch 5th\GIT Class> mkdir LocalRepo
+
+
+    Directory: F:\MUzaffarabad Batch 5th\GIT Class
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         3/20/2025   1:45 PM                LocalRepo
+
+__________________________________________________________________
+Lets you are going to make the multiple folders using one 
+command
+PS F:\MUzaffarabad Batch 5th\GIT Class> mkdir Repo_1, Repo_2, Repo_3
+
+
+    Directory: F:\MUzaffarabad Batch 5th\GIT Class
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         3/20/2025   1:47 PM                Repo_1
+d-----         3/20/2025   1:47 PM                Repo_2
+d-----         3/20/2025   1:47 PM                Repo_3
+__________________________________________________________________
+Now let go inside the local repo.
+by cd command.
+Now in order to work in new LocalRepo then we have to make it
+git coz git file is important for making the repo..
+lets type the command
+
+PS F:\MUzaffarabad Batch 5th\GIT Class\LocalRepo> git init
+Initialized empty Git repository in F:/MUzaffarabad Batch 5th/GIT Class/LocalRepo/.git/
+
+Now checking the files
+PS F:\MUzaffarabad Batch 5th\GIT Class\LocalRepo> gci -force
+
+
+    Directory: F:\MUzaffarabad Batch 5th\GIT Class\LocalRepo
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d--h--         3/20/2025   1:53 PM                .git
+__________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+41:00
+
+
